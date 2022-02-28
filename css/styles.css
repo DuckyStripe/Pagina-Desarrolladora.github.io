@@ -1,5 +1,10 @@
+/* Header */
 header{
     background-color: #774D94;
+    width: 100%;
+}
+.slogan{
+    float: left;
 }
 #logo{
 
@@ -7,7 +12,6 @@ header{
     color: white;
     font-size: 2.5rem;
     text-decoration: none;
-    margin-left: 2rem;
 }
 .head{
     text-decoration: none;
@@ -17,15 +21,122 @@ header{
 .lhead,a{
     color: white;
     text-decoration: none;
-    font-size: 1..3rem;
+    font-size: 1.3rem;
     padding: 8px;
     vertical-align: middle;
-}
-.ListaH{
-    display: block!important;
-}
+}    
+/* Body o main */
 main{
     padding-bottom: 1rem;
+}
+.carrusel{
+    height: 80%;
+    vertical-align: middle;
+}
+.ElementoCarrusel{
+    width: 100%;
+    height:calc(100%-30rem);
+    display: grid;
+    grid-template-columns: auto auto auto;   
+}
+.titulos{
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-weight: bolder;
+
+}
+.textocarrusel{
+    font-family: 'Oswald', sans-serif;
+    font-weight:bold;
+    font-size: 2.5rem;
+    color:  #24043c ;
+    text-shadow: 6;
+}
+#Carrusel3{
+    padding-bottom: 10%;
+}
+.contenido{
+    padding-bottom: 20%;
+}
+#cita{
+    font-size: 30px;
+    color:  #24043c !important;
+}
+.ElementoCarrusel{
+    opacity: 0.5;
+}
+/* Servicios */
+.card-title{
+    align-items: center;
+}
+p{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 13px!important;
+}
+.texto{
+    width: 100%;
+    height: 4rem;
+    padding-bottom:50px;
+}
+.TextoServicios{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px!important;
+}
+.TituloServicios{
+    text-align: center;
+}
+/* Nosotros */
+#TextoNosotros{
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+.TextoNosotrosCards{
+    text-align: justify;
+    font-size: 12px;
+}
+.imagenNosotros{
+    width: 100%;
+    height: 100%;
+}
+/* Nuestros Clientes */
+#TextoClientes{
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.imagenClientes{
+    width: 100%;
+    height: 100%;
+}
+.botonClientes{
+    align-items: center;
+}
+/* Contacto */
+#TextoContacto{
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.BotonContacto{
+    padding-top: 1rem;
+}
+#terminos{
+    font-size: 15px;
+    padding-left: 1rem;
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+.TerminosC{
+    padding-left: 1rem;
+    vertical-align: middle;
+}
+/* Footer */
+.Foo{
+    align-items: flex-end   ;
+
 }
 footer{
     background-color: #4F5556 ;

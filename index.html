@@ -7,16 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Oswald:wght@300;400&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="/img/LogoMoradoHead.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/normalize.css" as="style">
     <title>TrascenderSoft</title>
 </head>
 <body >
     <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light container">
             <div class="container-fluid">
-                <div class="col-md-8">
+                <div class="col-md-6 slogan">
                     <a class="navbar-brand" id="logo" href="#">
                         <img src="img/LogoMorado.svg" alt="" width="100" height="60" class="d-inline-block align-text-center">
                         TRASCENDER SOFT
@@ -46,50 +50,55 @@
     </header>
     <main >
         <!--Carrusel -->
-        <div class=" carrusel">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carrusel">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="img/Carrusel1.jpg" class="d-block w-100" alt="Computadora con codigo fuente">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>"El hardware es lo que hace a una máquina rápida; el software es lo que hace que una máquina rápida se vuelva lenta".</h5>
-                        <p><em>Craig Bruce</em></p>
+                    <img src="img/Carrusel1.jpg" class="ElementoCarrusel" alt="Computadora con código fuente">
+                    <div class="carousel-caption">
+                        <div class="contenido">
+                            <h5 class="textocarrusel">"El hardware es lo que hace a una máquina rápida; el software es lo que hace que una máquina rápida se vuelva lenta".</h5>
+                                <p id="cita"><em>Craig Bruce</em></p>
+                        </div>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="img/Carrusel4.jpg" class="d-block w-100" alt="Celular con computadora">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>No busques al usuario, sé encontrado por él.</h5>
-                      <p>Y con nuestra ayuda asi será.</p>
+                    <img src="img/Carrusel4.jpg" class=" ElementoCarrusel" alt="Celular con computadora">
+                    <div class="carousel-caption">
+                        <div class="contenido">
+                            <h5 class="textocarrusel">No busques al usuario, sé encontrado por él.</h5>
+                            <p class="textocarrusel">Y con nuestra ayuda asi será.</p>
+                        </div>  
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="img/Carrusel3.jpg" class="d-block w-100" alt="Calculadora con cuentas">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Desafiando todo, abrazando el éxito para los que viven con pasión, haciendo tu dia porque lo hacemos bien</h5>
-                      <p>Dejanos todo a nosotros.</p>
+                    <img src="img/Carrusel3.jpg" class="ElementoCarrusel" alt="Calculadora con cuentas">
+                    <div class="carousel-caption">
+                        <div id="Carrusel3">
+                            <h5 class="textocarrusel">Desafiando todo, abrazando el éxito para los que viven con pasión, haciendo tu dia porque lo hacemos bien</h5>
+                            <p class="textocarrusel">Dejanos todo a nosotros.</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span class="visually-hidden">Anterior</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                  <span class="visually-hidden">Siguiente</span>
                 </button>
               </div>
         </div>
         <!--Servicios -->
         <div class="container" id="Servicios">
             <div class="cols-md-12">
-                <h2>SERVICIOS</h2>
+                <h2 class="titulos">SERVICIOS</h2>
             </div>
             <div class="tarjetas">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -97,8 +106,12 @@
                     <div class="card">
                         <img src="img/Servicios1.jpg" class="card-img-top" alt="Computadora en oficina">
                         <div class="card-body">
-                        <h5 class="card-title">Pauta Comercial</h5>
-                        <p class="card-text">Contamos con estrategias comerciales que tienen como fin dar a conocer el producto o servicio que ofreces.</p>
+                                <div class="titulo">
+                                    <h5 class="card-title TituloServicios">Pauta Comercial</h5>
+                                </div>
+                                <div class="texto">
+                                    <p class="card-text TextoServicios">Contamos con estrategias comerciales que tienen como fin dar a conocer el producto o servicio que ofreces.</p>
+                                </div>
                         </div>
                     </div>
                     </div>
@@ -106,26 +119,38 @@
                     <div class="card">
                         <img src="img/Servicios2.jpg" class="card-img-top" alt="Persona ayudando a otra">
                         <div class="card-body">
-                        <h5 class="card-title">Consultoria</h5>
-                        <p class="card-text"> Guiamos en la compra e implementación de programas o máquinas, apoyando el desarrollo de la empresa, en cuanto a la estructura técnica y tecnológica.</p>
+                            <div class="titulo">
+                                <h5 class="card-title TituloServicios">Consultoría</h5>
+                            </div>
+                            <div class="texto">
+                                <p class="card-text TextoServicios"> Guiamos en la compra e implementación de programas o máquinas, apoyando el desarrollo de la empresa, en cuanto a la estructura técnica y tecnológica.</p>
+                            </div>
                         </div>
                     </div>
                     </div>
                     <div class="col">
                     <div class="card">
-                        <img src="img/Servicios3.jpg" class="card-img-top" alt="Programador utilizando computadora">
+                        <img src="img/Servicios5.jpg" class="card-img-top" alt="Programador utilizando computadora">
                         <div class="card-body">
-                        <h5 class="card-title">Desarrolo de Software</h5>
-                        <p class="card-text">Diseñamos el software ideal para resolver cualquier necesidad.</p>
+                            <div class="titulo">
+                                <h5 class="card-title TituloServicios">Desarrollo de Software</h5>
+                            </div>
+                            <div class="texto">
+                                <p class="card-text TextoServicios">Diseñamos el software ideal para resolver cualquier necesidad.</p>
+                            </div>
                         </div>
                     </div>
                     </div>
                     <div class="col">
                     <div class="card">
-                        <img src="img/Servicios4.jpg" class="card-img-top" alt="Persona arreglando pc">
+                        <img src="img/Servicios3.jpg" class="card-img-top" alt="Persona arreglando pc">
                         <div class="card-body">
-                        <h5 class="card-title">Soporte Tecnico</h5>
-                        <p class="card-text">Damos mantenimiento preventivo y correctivo a equipos de computo y sistemas digitales.</p>
+                            <div class="titulo">
+                                <h5 class="card-title TituloServicios">Soporte Técnico</h5>
+                            </div>
+                            <div class="texto">
+                                <p class="card-text TextoServicios">Damos mantenimiento preventivo y correctivo a equipos de computo y sistemas digitales.</p>
+                            </div>
                         </div>
                     </div>
                     </div>
@@ -135,21 +160,21 @@
         <!--Nosotros -->\
         <div class="container" id="Nosotros">
             <div class="row">
-                <h2>NOSOTROS</h2>
+                <h2 class="titulos">NOSOTROS</h2>
             </div>
             <div class="row">
-                <p>A mitad de la carrera universitaria los Ingenieros Luis Canchola, Jose Loaeza y Roberto Espinoza, inician con una startup que unos años mas tarde ya ha dejado de serlo para convertirse en una empresa que ha logrado hacer tratos con compañias de renombre.</p>
+                <p id="TextoNosotros">A mitad de la carrera universitaria los Ingenieros Luis Canchola, Jose Loaeza y Roberto Espinoza, inician con una startup que unos años mas tarde ya ha dejado de serlo para convertirse en una empresa que ha logrado hacer tratos con compañías de renombre.</p>
             </div>
             <div class="NosotrosTarjetas">
                 <div class="card mb-3" style="max-width: max-content;">
                     <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/mision.jpg" class="img-fluid rounded-start" alt="Choque de puños">
+                        <img src="img/mision.jpg" class="img-fluid rounded-start imagenNosotros" alt="Choque de puños">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                         <h5 class="card-title">Misión</h5>
-                        <p class="card-text">Brindar elementos de carácter digital que ayude a nuestros clientes a alcanzar sus objetivos económicos, estratégicos, operacionales y reputacionales, a través de la digitalización y automatización de procesos. Esto gracias a la creación de software especializado, con el fin de satisfacer las necesidades de nuestros clientes.</p>
+                        <p class="card-text TextoNosotrosCards">Brindar elementos de carácter digital que ayude a nuestros clientes a alcanzar sus objetivos económicos, estratégicos, operacionales y reputaciones, a través de la digitalización y automatización de procesos. Esto gracias a la creación de software especializado, con el fin de satisfacer las necesidades de nuestros clientes.</p>
                         </div>
                     </div>
                     </div>
@@ -159,23 +184,23 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Visión</h5>
-                                <p class="card-text">Ser de las principales empresas desarrolladoras de software en el país, contando con personal capacitado en los lenguajes de programación más actualizados, para ofrecer a nuestros clientes un funcionamiento óptimo en el producto solicitado. Mantener la confianza de nuestros clientes y al mismo tiempo ampliar nuestra cartera sin importar el tamaño de su proyecto. Ofrecer otros productos o servicios tales como soporte técnico, consultorías e Implementación de CRM.</p>
+                                <p class="card-text TextoNosotrosCards">Ser de las principales empresas desarrolladoras de software en el país, contando con personal capacitado en los lenguajes de programación más actualizados, para ofrecer a nuestros clientes un funcionamiento óptimo en el producto solicitado. Mantener la confianza de nuestros clientes y al mismo tiempo ampliar nuestra cartera sin importar el tamaño de su proyecto. Ofrecer otros productos o servicios tales como soporte técnico, consultorías e Implementación de CRM.</p>
                             </div>
                         </div>
                             <div class="col-md-4">
-                                <img src="img/vision.jpg" class="img-fluid rounded-start" alt="Computadora con contenido">
+                                <img src="img/vision.jpg" class="img-fluid rounded-start imagenNosotros" alt="Computadora con contenido">
                             </div>
                     </div>
                 </div>
                 <div class="card mb-3" style="max-width: max-content;">
                     <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/Descripcion.jpg" class="img-fluid rounded-start" alt="Persona utilizando una computadora">
+                        <img src="img/Descripcion.jpg" class="img-fluid rounded-start imagenNosotros" alt="Persona utilizando una computadora">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                         <h5 class="card-title">Descripción</h5>
-                        <p class="card-text">Somos una empresa mexicana de reciente creación enfocada al desarrollo de software, la resolución y automatización de procesos a través la implementación de herramientas eficaces que ayuden a resolver las necesidades y objetivos de nuestros clientes.</p>
+                        <p class="card-text TextoNosotrosCards">Somos una empresa mexicana de reciente creación enfocada al desarrollo de software, la resolución y automatización de procesos a través la implementación de herramientas eficaces que ayuden a resolver las necesidades y objetivos de nuestros clientes.</p>
                         </div>
                     </div>
                     </div>
@@ -185,62 +210,66 @@
         <!--Nuestros clientes --> 
         <div class="container" id="NuestrosClientes">
             <div class="row">
-                <h2>NUESTROS CLIENTES</h2>
+                <h2 class="titulos">NUESTROS CLIENTES</h2>
             </div>
             <div class="row">
-                <p>Te dejamos una muestra de algunos proyectos que hemos creado para nuestros clientes.</p>
+                <p id="TextoClientes">Te dejamos una muestra de algunos proyectos que hemos creado para nuestros clientes.</p>
             </div>
             <div class="container">
                 <div class="card">
                     <div class="card-header">
-                      <h5>Pagina Web | Coppel</h5>
+                      <h5>Página Web | Coppel</h5>
                     </div>
-                    <div class="col-md-6 offset-md-3">
-                        <img src="img/PaginaWebCoppel.png" class="img-fluid rounded-start" alt="Computadora con contenido">
+                    <div class="container">
+                            <img src="img/PaginaWebCoppel.png" class="img-fluid rounded-start imagenClientes" alt="Computadora con contenido">
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title">Pagina Web</h5>
+                      <h5 class="card-title">Página Web</h5>
                       <p class="card-text">Sitio oficial de una de las tiendas departamentales mas famosas en México.</p>
-                      <a href="#" class="btn btn-primary">Coppel.com</a>
+                      <div class="col-md-2 offset-md-10">
+                        <a href="#" class="btn btn-primary">Visitar Sitio</a>
                     </div>
                   </div>
                   <div class="card">
                     <div class="card-header">
                         <h5>Sistema POS | Del Rio</h5>
                     </div>
-                    <div class="col-md-6 offset-md-3">
-                        <img src="img/SistemaPOS.png" class="img-fluid rounded-start" alt="Computadora con contenido">
+                    <div class="container">
+                        <img src="img/SistemaPOS.png" class="img-fluid rounded-start imagenClientes" alt="Computadora con contenido">
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title">Sistema de venta</h5>
-                      <p class="card-text">Punto de venta para supermercado de origen 100% mexicano.</p>
-                      <a href="#" class="btn btn-primary">DelRio.com</a>
+                        <h5 class="card-title">Sistema de venta</h5>
+                        <p class="card-text">Punto de venta para supermercado de origen 100% mexicano.</p>
+                        <div class="col-md-2 offset-md-10">
+                            <a href="#" class="btn btn-primary">Visitar Sitio</a>
+                        </div>
                     </div>
-                  </div>
                   <div class="card">
                     <div class="card-header">
-                      <h5>Desarrollo de aplicacion | Flappy Bird</h5>
+                      <h5>Desarrollo de aplicación | Flappy Bird</h5>
                     </div>
-                    <div class="col-md-6 offset-md-3">
-                        <img src="img/aplicacion.jpg" class="img-fluid rounded-start max-content" alt="Computadora con contenido">
+                    <div class="container">
+                        <img src="img/aplicacion.jpg" class="img-fluid rounded-start max-content imagenClientes" alt="Computadora con contenido">
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title">Desarrollo de aplicacion</h5>
-                      <p class="card-text">Desarrollo de la sensación movil, con horas de entretenimiento.</p>
-                      <a href="#" class="btn btn-primary">GooglePlay</a>
+                      <h5 class="card-title">Desarrollo de aplicación</h5>
+                      <p class="card-text">Desarrollo de la sensación Movil, con horas de entretenimiento.</p>
+                      <div class="col-md-2 offset-md-10">
+                        <a href="#" class="btn btn-primary">Visitar Sitio</a>
+                    </div>
                     </div>
                   </div>
             </div>
         <!--Contacto -->
         <div class="container" id="Contacto">
             <div class="row">
-                <h2>CONTACTO</h2>
+                <h2 class="titulos">CONTACTO</h2>
             </div>
             <div class="row">
-                <p>¿Aún tienes dudas? Proporcionanos tus datos para que podamos ponernos en contacto contigo y darle forma a tu proyecto.</p>
+                <p id="TextoContacto">¿Aún tienes dudas? Proporcionados tus datos para que podamos ponernos en contacto contigo y darle forma a tu proyecto.</p>
             </div>
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
+            <div class="container-fluid">
+                <div class="col-md-8 offset-md-2">
                     <form action="php/enviar.php" method="post" name="frm">
                         <div class="form-floating mb-3">
                             <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="name" required>
@@ -248,22 +277,26 @@
                         </div>
                         <div class="form-floating mb-3">
                             <input type="email" name="correo" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                            <label for="floatingInput">Correo Electronico</label>
+                            <label for="floatingInput">Correo Electrónico</label>
                         </div>
                         <div class="form-floating">
                             <input type="text" name="numero" class="form-control" id="floatingInput" placeholder="numero" required>
                             <label for="floatingPassword">Numero de contacto</label>
                         </div>
-                        <div class="form-floating form-check">
-                            <div class="row">
-                                <div class="col-md-8 offset-md-2">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                                    <label class="form-check-label" for="exampleCheck1">Acepto recibir un correo o mensaje para realizar cotizacion.</label>
+                        <div class="container TerminosC">
+                            <div class="form-floating form-check">
+                                <div class="row BotonContacto" >
+                                    <div class="cols-md-12 botonClientes">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                        <label class="form-check-label" id="terminos" for="exampleCheck1">Acepto recibir un correo o mensaje para realizar cotización.</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                             <div class="form-floating col-md-2 offset-md-5">
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <div class="BotonContacto">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -273,20 +306,20 @@
 
     </main>
     <footer>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row justify-content-end">
                 <div class="col-md-5 aviso ms-auto align-middle" id="TextoFooter">
                     <p>Copyright © TrascenderSoft 2022</p>
                 </div>
                 <div class="col-md-5 redes content ms-auto align-middle FooterSvg">
                     <a class="navbar-brand" href="https://www.facebook.com/TrascenderSoft" target="_blank">
-                        <img src="img/LogoFacebook.png" alt="" width="40" height="40" class="d-inline-block align-text-center">
+                        <img src="img/LogoFacebook.png" alt="" width="30" height="30" class="d-inline-block align-text-center">
                     </a>
                     <a class="navbar-brand" href="https://www.instagram.com/TrascenderSoft" target="_blank">
-                        <img src="img/LogoInstagram.png" alt="" width="40" height="40" class="d-inline-block align-text-center">
+                        <img src="img/LogoInstagram.png" alt="" width="30" height="30" class="d-inline-block align-text-center">
                     </a>
                     <a class="navbar-brand" href="https://mx.linkedin.com/TrascenderSoft" target="_blank">
-                        <img src="img/LogoLinkedin.png" alt="" width="40" height="40" class="d-inline-block align-text-center">
+                        <img src="img/LogoLinkedin.png" alt="" width="30" height="30" class="d-inline-block align-text-center">
                     </a>
                 </div>
             </div>
