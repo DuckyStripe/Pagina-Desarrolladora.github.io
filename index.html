@@ -241,17 +241,17 @@
             </div>
             <div class="row">
                 <div class="col-md-6 offset-md-3">
-                    <form>
+                    <form action="/php/enviar.php" method="post" name="frm">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name">
+                            <input type="text" name="nombre" class="form-control" id="floatingInput" placeholder="name" required>
                             <label for="floatingInput">Nombre Completo</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="email" name="correo" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                             <label for="floatingInput">Correo Electronico</label>
                         </div>
                         <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <input type="text" name="numero" class="form-control" id="floatingInput" placeholder="numero" required>
                             <label for="floatingPassword">Numero de contacto</label>
                         </div>
                         <div class="form-floating form-check">
