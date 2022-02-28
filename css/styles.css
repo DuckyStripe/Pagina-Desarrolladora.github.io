@@ -5,6 +5,8 @@ header{
 }
 .slogan{
     float: left;
+    padding-left: 5rem;
+    justify-content: flex-start;
 }
 #logo{
 
@@ -13,21 +15,35 @@ header{
     font-size: 2.5rem;
     text-decoration: none;
 }
+.navegacion{
+    float: right;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    vertical-align: baseline;
+    justify-content: flex-end;
+}
 .head{
     text-decoration: none;
     font-size:larger;
     margin-right: 2rem;
+    vertical-align: middle;
+    justify-content: flex-end;
+    align-items: baseline;
 }
-.lhead,a{
+.lhead a{
     color: white;
     text-decoration: none;
     font-size: 1.3rem;
     padding: 8px;
     vertical-align: middle;
+    justify-content: flex-end;
 }    
+.lhead a:hover{
+    background-color: #704F89;
+}
 /* Body o main */
 main{
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 .carrusel{
     height: 80%;
@@ -35,7 +51,7 @@ main{
 }
 .ElementoCarrusel{
     width: 100%;
-    height:calc(100%-30rem);
+    height:calc(700px);
     display: grid;
     grid-template-columns: auto auto auto;   
 }
@@ -53,15 +69,33 @@ main{
     color:  #24043c ;
     text-shadow: 6;
 }
+.textocarruselp{
+    font-family: 'Oswald', sans-serif;
+    font-weight:bold;
+    font-size: 1.5rem;
+    color:  #3A2D49 ;
+    text-shadow: 6;
+}
 #Carrusel3{
-    padding-bottom: 10%;
+    vertical-align: baseline;
+    align-items: center;
+    padding-bottom: 8%;
 }
 .contenido{
-    padding-bottom: 20%;
+    vertical-align: baseline;
+    align-items: center;
+    padding-bottom: 10%;
+}
+.Carrusel2{
+    vertical-align: baseline;
+    align-items: center;
+    padding-bottom: 15%;
+    text-decoration: dashed;
 }
 #cita{
-    font-size: 30px;
+    font-size: 30px!important;
     color:  #24043c !important;
+    font-style:oblique!important;
 }
 .ElementoCarrusel{
     opacity: 0.5;
@@ -114,11 +148,26 @@ p{
 .botonClientes{
     align-items: center;
 }
+.NuestrosClientes{
+    padding-bottom: 2rem;
+}
 /* Contacto */
 #TextoContacto{
     text-align: center;
     padding-bottom: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px!important;
+    color: white;
+}
+.contacto{
+    color: white;
+    text-shadow: #0000;
+
+}
+#contactos{
+    padding: 2rem;
 }
 .BotonContacto{
     padding-top: 1rem;
@@ -128,15 +177,22 @@ p{
     padding-left: 1rem;
     vertical-align: middle;
     padding-bottom: 10px;
+    color: white;
 }
 .TerminosC{
     padding-left: 1rem;
     vertical-align: middle;
 }
+.espacio{
+    padding-bottom: 10px;
+}
 /* Footer */
 .Foo{
-    align-items: flex-end   ;
-
+    text-align: center;
+    vertical-align: baseline;
+    margin-left: auto;
+    align-items: flex-end;
+    padding-left: 10rem;
 }
 footer{
     background-color: #4F5556 ;
@@ -153,4 +209,18 @@ footer{
     padding-top: 5px;
     vertical-align: middle;
     
+}
+.bgcontacto{
+    background-image: url("/img/BGContacto.jpg");
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-position: center center;
+    width: max-content;
+}
+.margen{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.pie{
+    padding-top: 2rem;
 }
