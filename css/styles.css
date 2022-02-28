@@ -106,7 +106,11 @@ main{
 }
 p{
     font-family: 'Montserrat', sans-serif; 
-    font-size: 13px!important;
+    font-size: 18px!important;
+}
+.parrafos{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 18px!important;
 }
 .texto{
     width: 100%;
@@ -117,6 +121,9 @@ p{
     text-align: justify;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px!important;
+}
+.Espacio{
+    padding-bottom: 5rem;
 }
 .TituloServicios{
     text-align: center;
@@ -129,17 +136,22 @@ p{
 }
 .TextoNosotrosCards{
     text-align: justify;
-    font-size: 12px;
+    font-size: 15px!important;
+
 }
 .imagenNosotros{
     width: 100%;
     height: 100%;
+}
+.carta{
+    height: 10rem!important;
 }
 /* Nuestros Clientes */
 #TextoClientes{
     text-align: center;
     padding-bottom: 2rem;
     margin-bottom: 1rem;
+    font-size: 20px!important;
 }
 .imagenClientes{
     width: 100%;
