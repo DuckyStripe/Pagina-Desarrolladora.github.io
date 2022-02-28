@@ -12,4 +12,5 @@ $cuerpo .= "Correo: $correo \n";
 $cuerpo .= "Numero: $numero";
 
 mail($destinatario,$asunto,$cuerpo);
+header("Location: ../index.html");
 ?>
