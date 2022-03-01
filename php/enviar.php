@@ -12,5 +12,6 @@ $cuerpo .= "Correo: $correo \n";
 $cuerpo .= "Numero: $numero";
 
 mail($destinatario,$asunto,$cuerpo);
-header("Location: ../index.html#staticBackdrop1");
+sleep(3);
+header("Location: ../index.html#Contacto");
 ?>
