@@ -12,6 +12,5 @@ $cuerpo .= "Correo: $correo \n";
 $cuerpo .= "Numero: $numero";
 
 mail($destinatario,$asunto,$cuerpo);
-sleep(3);
-header("Location: ../index.html#Contacto");
+echo '<script> alert("Datos enviados correctamente"); window.location.href="../index.html#Contacto"; </script>';
 ?>
